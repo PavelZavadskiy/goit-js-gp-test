@@ -1,8 +1,17 @@
 @import './common';
 @import './example';
 
+:root {
+  --bg-color: #f1f2f6;
+}
+
+:root[theme='dark'] {
+  --bg-color: #57606f;
+}
+
 body {
   padding: 15px;
+  background-color: var(--bg-color);
 }
 
 img {
